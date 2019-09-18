@@ -1,4 +1,4 @@
-<!Doctype HTML> <!--Declaration of HTML5-->
+<!Doctype HTML>
 <html>
   <head>
     <title>Basic tags</title>
@@ -12,8 +12,10 @@
     <header>
       <h1>Getting Started with HTML</h1>
     </header>
+
+    <hr />
+
     <article>
-      <hr />
       <h2>Introduction of HTML</h2>
       <p><strong title="Hyper Text Markup Language is a descriptive language that specifies web pages.">HTML</strong> is a markup language, which is used to tell your browser how to structure the web pages. It is easy to learn. Html elements are represented by Tags. It consists of tags and elements having multiple attributes, which are used to wrap different types of content to make it appear and act in a particular way. Browsers do not display the HTML tags, but use them to render the content of the page. HTML Tags normally come in pairs like &lt;a&gt; and &lt;/a&gt;. The first tag in a pair is <b>start tag</b>, the second is <b>end tag</b>. Tags in HTML are case-insensitive, which means they can be written in Uppercase as well as in Lowercase. For example: &lt;Section&gt;, &lt;SECTION&gt;, &lt;section&gt;, &lt;sECTion&gt;, so on; and it will work fine. Best practice is to write all tags in lowercase for consistency, readability, and other reasons. The paragraph is written inside &lt;p&gt; tag. This is one of the most usable tag in HTML.</p>
       <p><mark><strong>NOTE:</strong> Basic elements of an HTML page are-</mark>
@@ -28,32 +30,38 @@
              <li>A text span, denoted by using the &lt;span&gt; tag.</li>
       </ul>
     </article>
+
+    <hr />
+
     <article>
-     <hr />
+     
       <h2>Anatomy of an HTML elements</h2>
       <p>Let's explore our paragraph element a bit further:</p><br />
       <figure>
       <img src="https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png" alt="Anatomy of HTML" title="Anatomy of HTML" width="75%" height="20%">
         <figcaption>Fig. 1 Anatomy of HTML elements</figcaption>
       </figure>
-    <p>HTML elements are structured and follow some simple rules to make your code good. Anatomy of HTML elments are depends upon four major parts:
-      <ol type="1">
-        <li><p><b>The opening tag:</b>
-          This consists of the name of the element(in this case, p), wrapped in opening and closing <strong>angle brackets</strong>. This states where the element begins or starts to take effects- in this case where the start of the paragraph is.</p></li>
-        <li><p><b>The closing tag:</b>
-          This is same as the opening tag, except that it includes a forward slash before the element name. This states where the elements ends- in this case where the end of the paragraph is. Failing to include a closing tag is a common beginner error and can lead to strange results.</p>
+      <p>HTML elements are structured and follow some simple rules to make your code good. Anatomy of HTML elments are depends upon four major parts:
+        <ol type="1">
+          <li><p><b>The opening tag:</b>
+            This consists of the name of the element(in this case, p), wrapped in opening and closing <strong>angle brackets</strong>. This states where the element begins or starts to take effects- in this case where the start of the paragraph is.</p></li>
+          <li><p><b>The closing tag:</b>
+            This is same as the opening tag, except that it includes a forward slash before the element name. This states where the elements ends- in this case where the end of the paragraph is. Failing to include a closing tag is a common beginner error and can lead to strange results.</p>
           </li>
-        
-        <li><p>T<b>The content:</b>
-          This is the content of the element, which in this case is just text.</p>
-        </li>
-        <li><p><b>The element:</b>
-          The opening tag plus the closing tag plus the content equals the element.</p>
-        </li>
-      </ol>
+          
+          <li><p>T<b>The content:</b>
+            This is the content of the element, which in this case is just text.</p>
+          </li>
+          <li><p><b>The element:</b>
+            The opening tag plus the closing tag plus the content equals the element.</p>
+          </li>
+        </ol>
+      </p>
+
     </article>
+
     <article>
-    <h4>Active learning: Creating your first HTML element</h4>
+      <h4>Active learning: Creating your first HTML element</h4>
       <p>Edit the line below in the <i>Input</i> area by wrapping it with the tags &lt;em&gt; and &lt;/em&gt; (put &lt;em&gt; before it to open the element, and &lt;/em&gt; after it, <i>to close the element</i>) — this should give the line italic emphasis! You'll be able to see your changes update live in the <i>Output</i> area.</p>
       <p>If you make a mistake, you can always reset it using the <i>Reset</i> button. If you get really stuck, press the <i>Show solution</i> button to see the answer.
       </p>
@@ -68,48 +76,84 @@
           <input type="button" name="Reset" value="Reset">
           <input type="button" name="Show Solution" value="Show Solution">
           </fieldset>
-      </form>
-    </p>
-  </article>
-  <article>
-    <h4>Nesting elements</h4>
-    <p>
-      You can put elements inside other elements too — this is called <strong>nesting</strong>. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a &lt;strong&gt; element, which means that the word is to be strongly emphasized:
-    </p>
+        </form>
+      </p>
+    </article>
 
-      <div>
-        &lt;p&gt; My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;
-    </div>
-    <p>
-      You do however need to make sure that your elements are properly nested: in the example above, we opened the <mark>p</mark> element first, then the <mark>strong</mark> element, therefore we have to close the <mark>strong</mark> element first, then the <mark>p</mark>. The following is incorrect:
-    </p>
-      <div>
-        &lt;p&gt; My cat is &lt;strong&gt;very &lt;/p&gt; grumpy.&lt;/strong&gt;
-    </div>
-  </article>
     <article>
-    <h4>Block versus inline elements</h4>
-    <p>There are two important categories of elements in HTML which you should know about. They are block-level elements and inline elements.</p>
-    <ul>
-      <li><p>Block-level elements form a visible block on a page — they will appear on a new line from whatever content went before it, and any content that goes after it will also appear on a new line. Block-level elements tend to be structural elements on the page that represent, for example, paragraphs, lists, navigation menus, footers, etc. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</p>
-      </li>
-       <li><p>Inline elements are those that are contained within block-level elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content. An inline element will not cause a new line to appear in the document; they would normally appear inside a paragraph of text, for example an &lt;a&gt; element (hyperlink) or emphasis elements such as &lt;em&gt; or &lt;strong&gt;.</p>
-      </li>
-    </ul>
-      <p>Take the following example:</p>
-      <div>
-        &lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em&gt;&lt;em&gt;third&lt;/em&gt;
-        &lt;p&gt;fourth&lt;/p&gt;&lt;p&gt;fifth&lt;/p&gt;&lt;p&gt;sixth&lt;/p&gt;
+      <h4>Nesting elements</h4>
+      <p>
+        You can put elements inside other elements too — this is called <strong>nesting</strong>. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a &lt;strong&gt; element, which means that the word is to be strongly emphasized:
+      </p>
+
+        <div>
+          &lt;p&gt; My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;
       </div>
       <p>
-        <a href="#" style="color:green" target="_blank" title="The HTML <em> element marks text that has stress emphasis. the <em> element can be nested, with each level of nesting indicating a greater degree of emphasis.">&lt;em&gt;</a> is an inline element, so as you can see below, the first three elements sit on the same line as one another with no space in between. On the other hand, <p> is a block-level element, so each element appears on a new line, with space above and below each (the spacing is due to default <a href="#" target="blank" style="color:green">CSS styling</a> that the browser applies to paragraphs).</p>
+        You do however need to make sure that your elements are properly nested: in the example above, we opened the <mark>p</mark> element first, then the <mark>strong</mark> element, therefore we have to close the <mark>strong</mark> element first, then the <mark>p</mark>. The following is incorrect:
       </p>
-      <div style="border-left: 3px solid blue; border-top: 1px solid blue; border-bottom: 1px solid blue; border-right: 1px solid blue; padding: 15px; height: 200px;">
-       <em>first</em><em>second</em><em>third</em>              
-       <p>fourth</p><p>fifth</p><p>sixth</p>
+        <div>
+          &lt;p&gt; My cat is &lt;strong&gt;very &lt;/p&gt; grumpy.&lt;/strong&gt;
       </div>
-</article>
-</body>
-</html>
+    </article>
 
+    <article>
+      <h4>Block versus inline elements</h4>
+      <p>There are two important categories of elements in HTML which you should know about. They are block-level elements and inline elements.</p>
+      <ul>
+        <li><p>Block-level elements form a visible block on a page — they will appear on a new line from whatever content went before it, and any content that goes after it will also appear on a new line. Block-level elements tend to be structural elements on the page that represent, for example, paragraphs, lists, navigation menus, footers, etc. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</p>
+        </li>
+         <li><p>Inline elements are those that are contained within block-level elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content. An inline element will not cause a new line to appear in the document; they would normally appear inside a paragraph of text, for example an &lt;a&gt; element (hyperlink) or emphasis elements such as &lt;em&gt; or &lt;strong&gt;.</p>
+        </li>
+      </ul>
+        <p>Take the following example:</p>
+        <div>
+          &lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em&gt;&lt;em&gt;third&lt;/em&gt;
+          &lt;p&gt;fourth&lt;/p&gt;&lt;p&gt;fifth&lt;/p&gt;&lt;p&gt;sixth&lt;/p&gt;
+        </div>
+        <p>
+          <a href="#" style="color:green" target="_blank" title="The HTML <em> element marks text that has stress emphasis. the <em> element can be nested, with each level of nesting indicating a greater degree of emphasis.">&lt;em&gt;</a> is an inline element, so as you can see below, the first three elements sit on the same line as one another with no space in between. On the other hand, <p> is a block-level element, so each element appears on a new line, with space above and below each (the spacing is due to default <a href="#" target="blank" style="color:green">CSS styling</a> that the browser applies to paragraphs).</p>
+        </p>
+        <div style="border-left: 3px solid blue; border-top: 1px solid blue; border-bottom: 1px solid blue; border-right: 1px solid blue; padding: 15px; height: 200px;">
+         <em>first</em><em>second</em><em>third</em>              
+         <p>fourth</p><p>fifth</p><p>sixth</p>
+          
+        </div>
+        <p style="display: block;"><a href="#" style="border: 2px solid blue; ">Open in CodepPen</a>
+           <a href="#" style="border: 2px solid blue; ">Open in JSFiddle</a>
+          </p>
+          <p>Note: HTML5 redefined the element categories in HTML5: see <a href="#">Element content categories</a>. While these definitions are more accurate and less ambiguous than the ones that went before, they are a lot more complicated to understand than "block" and "inline", so we will stick with these throughout this topic.
+          </p>
+          <p>Note: The terms "block" and "inline", as used in this topic, should not be confused with <a href="#">the types of CSS boxes</a> with the same names. While they correlate by default, changing the CSS display type doesn't change the category of the element and doesn't affect which elements it can contain and which elements it can be contained in. One of the reasons why HTML5 dropped these terms was to prevent this rather common confusion.
+          </p>
+          <p>Note: You can find useful reference pages that include lists of block and inline elements — see <a href="#">Block-level elements</a> and <a href="#">Inline elements</a>.
+          </p>
+    </article>
+
+    <article>
+      <h4>Empty elements</h4>
+      <p>Not all elements follow the above pattern of opening tag, content, closing tag. Some elements consist only of a single tag, which is usually used to insert/embed something in the document at the place it is included. For example, the <a href="#">&lt;img&gt;</a> element embeds an image file onto a page in the position it is included in:</p>
+      <div>
+        <p>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;</p>
+      </div>
+      <p>This would output the following in your page:<br />
+        <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
+      </p>
+      <div>
+        <p><strong>Note</strong>: Empty elements are also known as <em>void elements</em>.
+        </p>
+      </div>
+    </article >
+
+    <hr />
+    
+    <article>
+      <h2>Attributes</h2>
+    </article>
+
+</body>
+ 
+  
+
+</html>
 
