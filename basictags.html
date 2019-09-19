@@ -1,21 +1,21 @@
-<!Doctype HTML>		<!--Doctype is for declartaion of HTML5-->
-<html>			<!--This is the root element-->
-  <head>		<!--This contain the meta info. of the document which is not visible on the page-->
-    <title>Basic tags</title>	<!--Title of the document which comes as the tab name and when we bookmark any web page it comes as the bookmark name-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">	<!--meta is the info. about the document. Viewport is the area of the webpage in which the content is visible. initial-scale, it controls the zoom level when the web page is firstly loaded-->
-    <meta charset="UTF-8">		<!--UTF-8(Unicode Transformation Format) is used to reperesent the ASCII character and unicode encoding  -->
-    <meta name="author" content="Akshita Gupta">	
+<!Doctype HTML>   <!--Doctype is for declartaion of HTML5-->
+<html>      <!--This is the root element-->
+  <head>    <!--This contain the meta info. of the document which is not visible on the page-->
+    <title>Basic tags</title> <!--Title of the document which comes as the tab name and when we bookmark any web page it comes as the bookmark name-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--meta is the info. about the document. Viewport is the area of the webpage in which the content is visible. initial-scale, it controls the zoom level when the web page is firstly loaded-->
+    <meta charset="UTF-8">    <!--UTF-8(Unicode Transformation Format) is used to reperesent the ASCII character and unicode encoding  -->
+    <meta name="author" content="Akshita Gupta">  
     <meta name="description" content="Basics of web development">
     <meta name="keywords" content="HTML5,CSS3">
   </head>
-  <body>	<!--This is the container of your work.-->
-    <header>	<!--Top section of the document which contain the title of the document.-->
-      <h1>Getting Started with HTML</h1>	<!--h1 represent the main heading. similarly, h2 sub heading, h3 is next sub heading and so on till h6 -->
+  <body>  <!--This is the container of your work.-->
+    <header>  <!--Top section of the document which contain the title of the document.-->
+      <h1>Getting Started with HTML</h1>  <!--h1 represent the main heading. similarly, h2 sub heading, h3 is next sub heading and so on till h6 -->
     </header>
 
-    <hr />	<!--it is the horizontal rule, which is used to seperate content from one another.It draws horizontal line.-->
+    <hr />  <!--it is the horizontal rule, which is used to seperate content from one another.It draws horizontal line.-->
 
-    <article>	<!---->
+    <article> <!---->
       <h2>Introduction of HTML</h2>
       <p><strong title="Hyper Text Markup Language is a descriptive language that specifies web pages.">HTML</strong> is a markup language, which is used to tell your browser how to structure the web pages. It is easy to learn. Html elements are represented by Tags. It consists of tags and elements having multiple attributes, which are used to wrap different types of content to make it appear and act in a particular way. Browsers do not display the HTML tags, but use them to render the content of the page. HTML Tags normally come in pairs like &lt;a&gt; and &lt;/a&gt;. The first tag in a pair is <b>start tag</b>, the second is <b>end tag</b>. Tags in HTML are case-insensitive, which means they can be written in Uppercase as well as in Lowercase. For example: &lt;Section&gt;, &lt;SECTION&gt;, &lt;section&gt;, &lt;sECTion&gt;, so on; and it will work fine. Best practice is to write all tags in lowercase for consistency, readability, and other reasons. The paragraph is written inside &lt;p&gt; tag. This is one of the most usable tag in HTML.</p>
       <p><mark><strong>NOTE:</strong> Basic elements of an HTML page are-</mark>
@@ -58,150 +58,159 @@
         </ol>
       </p>
 
-    </article>
+          <article>
+            <h4>Active learning: Creating your first HTML element</h4>
+            <p>Edit the line below in the <i>Input</i> area by wrapping it with the tags &lt;em&gt; and &lt;/em&gt; (put &lt;em&gt; before it to open the element, and &lt;/em&gt; after it, <i>to close the element</i>) — this should give the line italic emphasis! You'll be able to see your changes update live in the <i>Output</i> area.</p>
+            <p>If you make a mistake, you can always reset it using the <i>Reset</i> button. If you get really stuck, press the <i>Show solution</i> button to see the answer.
+            </p>
+            <p>
+              <form>
+                <fieldset>
+                  <legend>Text Editor</legend>
+                  <h5>Live Output</h5>
+                  <input type="text">
+                <h5>Editable code</h5>
+                <textarea rows="5" cols="60" placeholder="This is my Text."></textarea><br />
+                <input type="button" name="Reset" value="Reset">
+                <input type="button" name="Show Solution" value="Show Solution">
+                </fieldset>
+                  </form>
+              </p>
+          </article>
 
-    <article>
-      <h4>Active learning: Creating your first HTML element</h4>
-      <p>Edit the line below in the <i>Input</i> area by wrapping it with the tags &lt;em&gt; and &lt;/em&gt; (put &lt;em&gt; before it to open the element, and &lt;/em&gt; after it, <i>to close the element</i>) — this should give the line italic emphasis! You'll be able to see your changes update live in the <i>Output</i> area.</p>
-      <p>If you make a mistake, you can always reset it using the <i>Reset</i> button. If you get really stuck, press the <i>Show solution</i> button to see the answer.
-      </p>
-      <p>
-        <form>
-          <fieldset>
-            <legend>Text Editor</legend>
-            <h5>Live Output</h5>
-            <input type="text">
-          <h5>Editable code</h5>
-          <textarea rows="5" cols="60" placeholder="This is my Text."></textarea><br />
-          <input type="button" name="Reset" value="Reset">
-          <input type="button" name="Show Solution" value="Show Solution">
-          </fieldset>
-        </form>
-      </p>
-    </article>
+          <article>
+            <h4>Nesting elements</h4>
+            <p>
+              You can put elements inside other elements too — this is called <strong>nesting</strong>. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a &lt;strong&gt; element, which means that the word is to be strongly emphasized:
+            </p>
 
-    <article>
-      <h4>Nesting elements</h4>
-      <p>
-        You can put elements inside other elements too — this is called <strong>nesting</strong>. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a &lt;strong&gt; element, which means that the word is to be strongly emphasized:
-      </p>
+              <div>
+                &lt;p&gt; My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;
+            </div>
+            <p>
+              You do however need to make sure that your elements are properly nested: in the example above, we opened the <mark>p</mark> element first, then the <mark>strong</mark> element, therefore we have to close the <mark>strong</mark> element first, then the <mark>p</mark>. The following is incorrect:
+            </p>
+              <div>
+                &lt;p&gt; My cat is &lt;strong&gt;very &lt;/p&gt; grumpy.&lt;/strong&gt;
+            </div>
+          </article>
 
-        <div>
-          &lt;p&gt; My cat is &lt;strong&gt;very&lt;/strong&gt; grumpy.&lt;/p&gt;
-      </div>
-      <p>
-        You do however need to make sure that your elements are properly nested: in the example above, we opened the <mark>p</mark> element first, then the <mark>strong</mark> element, therefore we have to close the <mark>strong</mark> element first, then the <mark>p</mark>. The following is incorrect:
-      </p>
-        <div>
-          &lt;p&gt; My cat is &lt;strong&gt;very &lt;/p&gt; grumpy.&lt;/strong&gt;
-      </div>
-    </article>
+          <article>
+            <h4>Block versus inline elements</h4>
+            <p>There are two important categories of elements in HTML which you should know about. They are block-level elements and inline elements.</p>
+            <ul>
+              <li><p>Block-level elements form a visible block on a page — they will appear on a new line from whatever content went before it, and any content that goes after it will also appear on a new line. Block-level elements tend to be structural elements on the page that represent, for example, paragraphs, lists, navigation menus, footers, etc. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</p>
+              </li>
+               <li><p>Inline elements are those that are contained within block-level elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content. An inline element will not cause a new line to appear in the document; they would normally appear inside a paragraph of text, for example an &lt;a&gt; element (hyperlink) or emphasis elements such as &lt;em&gt; or &lt;strong&gt;.</p>
+              </li>
+            </ul>
+              <p>Take the following example:</p>
+              <div>
+                &lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em&gt;&lt;em&gt;third&lt;/em&gt;
+                &lt;p&gt;fourth&lt;/p&gt;&lt;p&gt;fifth&lt;/p&gt;&lt;p&gt;sixth&lt;/p&gt;
+              </div>
+              <p>
+                <a href="#" style="color:green" target="_blank" title="The HTML <em> element marks text that has stress emphasis. the <em> element can be nested, with each level of nesting indicating a greater degree of emphasis.">&lt;em&gt;</a> is an inline element, so as you can see below, the first three elements sit on the same line as one another with no space in between. On the other hand, <p> is a block-level element, so each element appears on a new line, with space above and below each (the spacing is due to default <a href="#" target="blank" style="color:green">CSS styling</a> that the browser applies to paragraphs).</p>
+              </p>
+              <div style="border-left: 3px solid blue; border-top: 1px solid blue; border-bottom: 1px solid blue; border-right: 1px solid blue; padding: 15px; height: 200px;">
+               <em>first</em><em>second</em><em>third</em>              
+               <p>fourth</p><p>fifth</p><p>sixth</p>
+                
+              </div>
+              <p style="display: block;"><a href="#" style="border: 2px solid blue; ">Open in CodepPen</a>
+                 <a href="#" style="border: 2px solid blue; ">Open in JSFiddle</a>
+                </p>
+                <p>Note: HTML5 redefined the element categories in HTML5: see <a href="#">Element content categories</a>. While these definitions are more accurate and less ambiguous than the ones that went before, they are a lot more complicated to understand than "block" and "inline", so we will stick with these throughout this topic.
+                </p>
+                <p>Note: The terms "block" and "inline", as used in this topic, should not be confused with <a href="#">the types of CSS boxes</a> with the same names. While they correlate by default, changing the CSS display type doesn't change the category of the element and doesn't affect which elements it can contain and which elements it can be contained in. One of the reasons why HTML5 dropped these terms was to prevent this rather common confusion.
+                </p>
+                <p>Note: You can find useful reference pages that include lists of block and inline elements — see <a href="#">Block-level elements</a> and <a href="#">Inline elements</a>.
+                </p>
+          </article>
 
-    <article>
-      <h4>Block versus inline elements</h4>
-      <p>There are two important categories of elements in HTML which you should know about. They are block-level elements and inline elements.</p>
-      <ul>
-        <li><p>Block-level elements form a visible block on a page — they will appear on a new line from whatever content went before it, and any content that goes after it will also appear on a new line. Block-level elements tend to be structural elements on the page that represent, for example, paragraphs, lists, navigation menus, footers, etc. A block-level element wouldn't be nested inside an inline element, but it might be nested inside another block-level element.</p>
-        </li>
-         <li><p>Inline elements are those that are contained within block-level elements and surround only small parts of the document’s content, not entire paragraphs and groupings of content. An inline element will not cause a new line to appear in the document; they would normally appear inside a paragraph of text, for example an &lt;a&gt; element (hyperlink) or emphasis elements such as &lt;em&gt; or &lt;strong&gt;.</p>
-        </li>
-      </ul>
-        <p>Take the following example:</p>
-        <div>
-          &lt;em&gt;first&lt;/em&gt;&lt;em&gt;second&lt;/em&gt;&lt;em&gt;third&lt;/em&gt;
-          &lt;p&gt;fourth&lt;/p&gt;&lt;p&gt;fifth&lt;/p&gt;&lt;p&gt;sixth&lt;/p&gt;
-        </div>
-        <p>
-          <a href="#" style="color:green" target="_blank" title="The HTML <em> element marks text that has stress emphasis. the <em> element can be nested, with each level of nesting indicating a greater degree of emphasis.">&lt;em&gt;</a> is an inline element, so as you can see below, the first three elements sit on the same line as one another with no space in between. On the other hand, <p> is a block-level element, so each element appears on a new line, with space above and below each (the spacing is due to default <a href="#" target="blank" style="color:green">CSS styling</a> that the browser applies to paragraphs).</p>
-        </p>
-        <div style="border-left: 3px solid blue; border-top: 1px solid blue; border-bottom: 1px solid blue; border-right: 1px solid blue; padding: 15px; height: 200px;">
-         <em>first</em><em>second</em><em>third</em>              
-         <p>fourth</p><p>fifth</p><p>sixth</p>
-          
-        </div>
-        <p style="display: block;"><a href="#" style="border: 2px solid blue; ">Open in CodepPen</a>
-           <a href="#" style="border: 2px solid blue; ">Open in JSFiddle</a>
+        <article>
+          <h4>Empty elements</h4>
+          <p>Not all elements follow the above pattern of opening tag, content, closing tag. Some elements consist only of a single tag, which is usually used to insert/embed something in the document at the place it is included. For example, the <a href="#">&lt;img&gt;</a> element embeds an image file onto a page in the position it is included in:</p>
+          <div>
+            <p>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;</p>
+          </div>
+          <p>This would output the following in your page:<br />
+            <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
           </p>
-          <p>Note: HTML5 redefined the element categories in HTML5: see <a href="#">Element content categories</a>. While these definitions are more accurate and less ambiguous than the ones that went before, they are a lot more complicated to understand than "block" and "inline", so we will stick with these throughout this topic.
-          </p>
-          <p>Note: The terms "block" and "inline", as used in this topic, should not be confused with <a href="#">the types of CSS boxes</a> with the same names. While they correlate by default, changing the CSS display type doesn't change the category of the element and doesn't affect which elements it can contain and which elements it can be contained in. One of the reasons why HTML5 dropped these terms was to prevent this rather common confusion.
-          </p>
-          <p>Note: You can find useful reference pages that include lists of block and inline elements — see <a href="#">Block-level elements</a> and <a href="#">Inline elements</a>.
-          </p>
-    </article>
+          <div>
+            <p><strong>Note</strong>: Empty elements are also known as <em>void elements</em>.
+            </p>
+          </div>
+        </article>
 
-    <article>
-      <h4>Empty elements</h4>
-      <p>Not all elements follow the above pattern of opening tag, content, closing tag. Some elements consist only of a single tag, which is usually used to insert/embed something in the document at the place it is included. For example, the <a href="#">&lt;img&gt;</a> element embeds an image file onto a page in the position it is included in:</p>
-      <div>
-        <p>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;</p>
-      </div>
-      <p>This would output the following in your page:<br />
-        <img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png">
-      </p>
-      <div>
-        <p><strong>Note</strong>: Empty elements are also known as <em>void elements</em>.
-        </p>
-      </div>
-    </article >
-
-    <hr />
+        <hr />
     
-    <article>
-      <h2>Attributes</h2>
-      <p>Elements can also have attributes, which look like this:</p><br />
-      <figure>
-      <img src="https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png" alt="Anatomy of HTML" title="Anatomy of HTML" width="75%" height="20%">
-        <figcaption>Fig. 2 Attributes of HTML elements</figcaption>
-      </figure><br />
-      <p> Attributes contain extra information about the element which you don't want to appear in the actual content. In this case, the <mark>class</mark> attribute allows you to give the element an identifying name that can be later used to target the element with style information and other things.</p>
-      <p> An attribute should have:</p>
-      <ol type="1">
-        <li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes),</li>
-        <li>The attribute name, followed by an equal sign,</li>
-        <li>An attribute value, with opening and closing quote marks wrapped around it.</li>
-      </ol>
+        <article>
+          <h2>Attributes</h2>
+          <p>Elements can also have attributes, which look like this:</p><br />
+          <figure>
+          <img src="https://mdn.mozillademos.org/files/9345/grumpy-cat-attribute-small.png" alt="Anatomy of HTML" title="Anatomy of HTML" width="75%" height="20%">
+            <figcaption>Fig. 2 Attributes of HTML elements</figcaption>
+          </figure><br />
+          <p> Attributes contain extra information about the element which you don't want to appear in the actual content. In this case, the <mark>class</mark> attribute allows you to give the element an identifying name that can be later used to target the element with style information and other things.</p>
+          <p> An attribute should have:</p>
+          <ol type="1">
+            <li>A space between it and the element name (or the previous attribute, if the element already has one or more attributes),</li>
+            <li>The attribute name, followed by an equal sign,</li>
+            <li>An attribute value, with opening and closing quote marks wrapped around it.</li>
+          </ol>
+        </article>
     
-    
-    <article>
-      <h4>Active learning: Adding attributes to an element</h4>
-      <p>Another example of an element is <code>&lt;a&gt;</code> — this stands for "anchor" and will make the piece of text it wraps around into a hyperlink. This can take a number of attributes, but several are as follows:</p>
+        <article>
+          <h4>Active learning: Adding attributes to an element</h4>
+          <p>Another example of an element is <code>&lt;a&gt;</code> — this stands for "anchor" and will make the piece of text it wraps around into a hyperlink. This can take a number of attributes, but several are as follows:</p>
 
-    <ul>
-      <li><code>href</code>: This attribute specifies as its value the web address that you want the link to point to; where the browser navigates to when the link is clicked. For example, <code>href="https://www.mozilla.org/"</code>.</li>
-      <li> <code>title</code>: The title attribute specifies extra information about the link, such as what the page is that you are linking to. For example, <code>title="The Mozilla homepage"</code>. This will appear as a tooltip when hovered over.</li>
-      <li> <code>target</code>: The <code>target</code> attribute specifies the browsing context which will be used to display the link. For example, <code>target="_blank"</code> will display the link in a new tab. If you want to display the link in the current tab just omit this attribute.</li>
+          <ul>
+          <li><code>href</code>: This attribute specifies as its value the web address that you want the link to point to; where the browser navigates to when the link is clicked. For example, <code>href="https://www.mozilla.org/"</code>.</li>
+          <li> <code>title</code>: The title attribute specifies extra information about the link, such as what the page is that you are linking to. For example, <code>title="The Mozilla homepage"</code>. This will appear as a tooltip when hovered over.</li>
+          <li> <code>target</code>: The <code>target</code> attribute specifies the browsing context which will be used to display the link. For example, <code>target="_blank"</code> will display the link in a new tab. If you want to display the link in the current tab just omit this attribute.</li>
+          </ul>
 
-      <p>Edit the line below in the <i>Input</i> area to turn it into a link to your favorite website. First, add the <code>&lt;a&gt;</code>element. Second, add the <code>href</code> attribute and the <code>title</code> attribute. Lastly, specify the target attribute to open the link in the new tab. You'll be able to see your changes update live in the <i>Output</i> area. You should see a link that when hovered over displays the <code>title</code> attribute's content, and when clicked navigates to the web address in the <code>href</code> element. Remember that you need to include a space between the element name, and each attribute.</p>
+          <p>Edit the line below in the <i>Input</i> area to turn it into a link to your favorite website. First, add the <code>&lt;a&gt;</code>element. Second, add the <code>href</code> attribute and the <code>title</code> attribute. Lastly, specify the target attribute to open the link in the new tab. You'll be able to see your changes update live in the <i>Output</i> area. You should see a link that when hovered over displays the <code>title</code> attribute's content, and when clicked navigates to the web address in the <code>href</code> element. Remember that you need to include a space between the element name, and each attribute.</p>
 
-        <p>If you make a mistake, you can always reset it using the <i>Reset</i> button. If you get really stuck, press the <i>Show solution button</i> to see the answer.</p>
-      <p>
-        <form>
-          <fieldset>
-            <legend>Text Editor</legend>
-            <h5>Live Output</h5>
-            <input type="text">
-          <h5>Editable code</h5>
-          <textarea rows="5" cols="60" placeholder="<p>A link to my favourite website.</p>"></textarea><br />
-          <input type="button" name="Reset" value="Reset">
-          <input type="button" name="Show Solution" value="Show Solution">
-          </fieldset>
-        </form>
-      </p>
-    </article>
+            <p>If you make a mistake, you can always reset it using the <i>Reset</i> button. If you get really stuck, press the <i>Show solution button</i> to see the answer.</p>
+          <p>
+            <form>
+              <fieldset>
+                <legend>Text Editor</legend>
+                <h5>Live Output</h5>
+                <input type="text">
+              <h5>Editable code</h5>
+              <textarea rows="5" cols="60" placeholder="<p>A link to my favourite website.</p>"></textarea><br />
+              <input type="button" name="Reset" value="Reset">
+              <input type="button" name="Show Solution" value="Show Solution">
+              </fieldset>
+            </form>
+          </p>
+        </article>
      
-    <article>
-      <h4>Boolean attributes</h4>
-      <p>
-        You'll sometimes see attributes written without values — this is perfectly allowed. These are called boolean attributes, and they can only have one value, which is generally the same as the attribute name. As an example, take the <code>disabled</code> attribute, which you can assign to form input elements if you want them to be disabled (greyed out) so the user can't enter any data in them.
-      </p>
-       <p>&lt;img src="https://raw.githubusercontent.com/mdn/beginner-html-site/gh-pages/images/firefox-icon.png"&gt;</p>
-      
-      </article>
-   </article>
-</body>
- 
-  
+        <article>
+          <h4>Boolean attributes</h4>
+          <p>
+            You'll sometimes see attributes written without values — this is perfectly allowed. These are called boolean attributes, and they can only have one value, which is generally the same as the attribute name. As an example, take the <code>disabled</code> attribute, which you can assign to form input elements if you want them to be disabled (greyed out) so the user can't enter any data in them.
+          </p>
+           <p>&lt;input type="text" disabled="disabled"&gt;</p>
+          <p>As shorthand, it is perfectly allowable to write this as follows (we've also included a non-disabled form input element for reference, to give you more of an idea what is going on):
+          </p>
+          <p>&gt;!--Using the disabled attribute prevents the end user from entering text into the input box--&lt;<br />
+            &lt;input type="text" disabled&gt;<br />
+            &gt;The user can enter text into the follow input, as it doesn't contain the disabled attributes-->&gt;<br />
+            &lt;input type="text"&gt;
+          </p>
+          <p>The above HTML will give you a rendered output as follows:<br />
+            <input type="text" disabled>
+            <input type="text">
+          </p>
 
+        </article>
+      
+
+
+  </body>
 </html>
 
