@@ -211,9 +211,9 @@
           <article>
             <h4>Ommiting Quotes around attributes values</h4>
             <p>When you look around the World Wide Web, you will come across a number of strange markup styles, including attribute values without quotes. This is allowable in cirtain circumstances, but will break your markup in others. For example, if we revisit our link example from earlier, we could write a basic version with only the <code>href</code> attribute, like this:</p>
-            <p>&lt;a href="https://www.mozilla.org/&gt;favourite website&lt;a&gt;</p>
+            <p>&lt;a href="https://www.mozilla.org/&gt;favourite website&lt;/a&gt;</p>
             <p>However, as soon as we add the <code>title</code> attribute in this style, things will go wrong:</p>
-            <p>&lt;a href="https://www.mozilla.org/ title=the Mozilla homepage&gt;favourite website&lt;a&gt;</p>
+            <p>&lt;a href="https://www.mozilla.org/ title=the Mozilla homepage&gt;favourite website&lt;/a&gt;</p>
             <p>At this poijnt the browser will misinterpret your markup, thinking that the little attributes-a little attribute with the value "The", and two boolean attributes, <code>Mozilla</code> and <code>Homepage</code>. This obviously not what was intended, and will cause errors or unexpected behaviour in the code, as seen in the live example below. Try hovering over the link to see what the title text is!</p><br />
             <a href="https://www.mozilla.org/" title=the Mozilla homepage favourite website></a><br />
             <p>Our advice is to always include quotes --It avoids such problem, and result in more readable code too.</p>
@@ -223,13 +223,26 @@
             <h4>Single or double quotes?</h4>
             <p>In this article you will notice that the attributes are all wraped in double quotes in some people's HTML. This is purely a matter of style, and you can feel free to choose which one you prefer. Both the lines are equivalent.</p>
             <p>
-              &lt;a href="https://www.mozilla.org/" &gt;favourite website&lt;a&gt;<br />
-              &lt;a href='https://www.mozilla.org/' &gt;favourite website&lt;a&gt;
+              &lt;a href="https://www.mozilla.org/" &gt;favourite website&lt;/a&gt;<br />
+              &lt;a href='https://www.mozilla.org/' &gt;favourite website&lt;/a&gt;
               <p>You should however make sure you don't mix them together. The following will go wrong!</p>
-              
+              <p>&lt;a href="http://www.example.com'>A link to my example./&gt;</p>
+              <p>If you have used on e type of quote in HTML, you can include the other type of quote inside uour attributes value without causing any problems:</p>
+              <p>&lt;a href="https://www.mozilla.org/" title="this isn't funny."&gt;A link to my example.&lt;/a&gt;</p>
+              <p>However if you want to include a quote within the quotes where both the quotes are of the same type(single quote or double quote), you will have to <a href="#">use HTML entities</a> for the quotes. For example, this will break:</p>
+              <p>&lt;a href='https://www.mozilla.org/' titile='this isn't funny'&gt;A link to my example.&lt;/a&gt;</p>
+              <p>So you need to do this:</p>
+              <p>&lt;a href='https://www.mozilla.org/' titile='this isn&#39;t funny'&gt;A link to my example.&lt;/a&gt;</p>
           </article>
+    </article>
 
-      </article>
+    <hr />
+
+    <article>
+      <h2>Anatomy of an HTML document</h2>
+      <p>That wraps up the basics of individual HTML elements, but they aren't very useful on their own. Now we'll look at how individual elements are combined to form an entire HTML page:</p>
+    </article>
+
 
 
   </body>
